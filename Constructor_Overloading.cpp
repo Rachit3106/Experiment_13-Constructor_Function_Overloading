@@ -10,12 +10,12 @@ class Student{
     string name;
     char div;
     public:
-    Student(int r=0,string n="xyz",char d='X'){
+    Student(int r=0,string n="xyz",char d='X'){      // default constuctor and parameterized constructor
         roll_no=r;
         name=n;
         div=d;
     }
-    Student(Student &s1){
+    Student(Student &s1){           // copy constructor
         roll_no=s1.roll_no;
         name=s1.name;
         div=s1.div;
